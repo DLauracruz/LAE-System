@@ -1,0 +1,18 @@
+// $fbg-color = font and background color
+@mixin btn-outline($fbg-color) {
+  background-color: transparent;
+  color: $fbg-color;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-right: 1em;
+  padding: 0.2em 1em;
+  border-radius: 0.5em;
+  border: 0.2em solid $fbg-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $fbg-color;
+    color: lighten($color: $fbg-color, $amount: 80);
+    transition-duration: 0.3s;
+  }
+}

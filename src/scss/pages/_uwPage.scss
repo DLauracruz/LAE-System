@@ -1,0 +1,11 @@
+.uw {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 60% 40%;
+  grid-template-areas: "policy policy" "_ _";
+  height: 100%;
+
+  & > div:first-child {
+    grid-area: policy;
+  }
+}

@@ -1,0 +1,27 @@
+// Settings
+@import "config/colors";
+@import "config/reset";
+@import "config/scrollbar";
+
+// Mixin
+@import "mixins/table";
+@import "mixins/buttons";
+
+// Shared
+@import "shared/navbar";
+
+// Custom Components
+@import "custom/home/service";
+@import "custom/home/recentTable";
+@import "custom/home/goalsTable";
+@import "custom/home/remindersTable";
+
+@import "custom/uw/policyTable";
+@import "custom/uw/errorTable";
+@import "custom/uw/tagTable";
+
+// Pages
+@import "pages/main";
+@import "pages/homePage";
+@import "pages/uwPage";
+@import "pages/uwDashboard";

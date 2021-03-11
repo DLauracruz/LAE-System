@@ -1,0 +1,17 @@
+.recent {
+  @include table(3);
+  margin: 0 1em;
+  max-height: 15em;
+  overflow-y: auto;
+  min-height: calc(100% - 1em);
+
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  table {
+    padding-right: 0.5em;
+    overflow-y: auto;
+  }
+}

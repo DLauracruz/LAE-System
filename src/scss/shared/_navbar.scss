@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100vw;
+  height: 4em;
+  padding: 0 2em;
+  border-radius: 0 0 1em 1em;
+  background-color: $primary-color;
+
+  ul {
+    display: flex;
+    color: $white;
+
+    a {
+      display: flex;
+      align-items: center;
+      padding: 1em;
+      height: 1em;
+      border-radius: 2em;
+      cursor: pointer;
+      text-decoration: none;
+      color: $white;
+
+      &:hover:not(.navbar__selected) {
+        background-color: $white;
+        font-weight: 700;
+        transition-duration: 0.3s;
+        color: $primary-ft;
+      }
+    }
+
+    &:last-child li {
+      margin-left: 1em;
+    }
+
+    &:first-child li {
+      margin-right: 1em;
+    }
+  }
+
+  &__selected {
+    background-color: $tertiary-color;
+    font-weight: 700;
+    color: $primary-ft;
+  }
+}
