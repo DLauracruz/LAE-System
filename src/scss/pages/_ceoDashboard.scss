@@ -1,0 +1,28 @@
+.ceo-dashboard {
+  @extend .recent;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  select,
+  input {
+    background-color: $primary-color;
+    color: white;
+    padding: 0.5em 1em;
+    height: 3em;
+    margin-right: 1em;
+    border-radius: 0.2em;
+  }
+
+  &__table {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  &__btns {
+    margin-top: auto;
+    button {
+      @include btn-outline($primary-ft);
+    }
+  }
+}

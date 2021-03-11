@@ -1,3 +1,18 @@
 .tag {
   @extend .recent;
+
+  display: grid;
+  grid-template-rows: calc(100% - 3em) 3em;
+
+  &__table {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  &__btns {
+    margin-top: auto;
+    button {
+      @include btn-outline($primary-ft);
+    }
+  }
 }

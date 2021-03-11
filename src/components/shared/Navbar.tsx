@@ -7,7 +7,7 @@ export const Navbar = () => {
     { name: "UW", path: "/uw" },
     { name: "UW Dashboard", path: "/uw-dashboard" },
     { name: "CEO Dashboard", path: "/ceo-dashboard" },
-    { name: "MD", path: "/md" },
+    { name: "MD", path: "/manager-dashboard" },
     { name: "Testing IT", path: "/testing-it" },
   ];
 
