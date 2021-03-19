@@ -43,6 +43,10 @@
   &__selected {
     background-color: $tertiary-color;
     font-weight: 700;
-    color: $primary-ft;
+
+    a {
+      text-decoration: none;
+      color: $primary-ft;
+    }
   }
 }

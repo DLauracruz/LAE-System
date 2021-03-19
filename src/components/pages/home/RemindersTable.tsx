@@ -11,8 +11,8 @@ export const RemindersTable = () => {
           </tr>
         </thead>
         <tbody>
-          {[...Array(20)].map(() => (
-            <tr>
+          {[...Array(20)].map((_, idx) => (
+            <tr key={idx}>
               <td>Test</td>
               <td>Test</td>
               <td>Test</td>

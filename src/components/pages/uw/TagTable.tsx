@@ -11,8 +11,8 @@ export const TagTable = () => {
             </tr>
           </thead>
           <tbody>
-            {[...Array(15)].map(() => (
-              <tr>
+            {[...Array(15)].map((_, idx) => (
+              <tr key={idx}>
                 <td>723645</td>
                 <td>Jorge W. Joss</td>
                 <td>

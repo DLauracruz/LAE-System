@@ -23,7 +23,7 @@ export const Navbar = () => {
     <div className="navbar">
       <ul>
         {navItems.map(({ name, path }) => (
-          <RLink cssClass="navbar__selected" path={path}>
+          <RLink key={path} cssClass="navbar__selected" path={path}>
             {name}
           </RLink>
         ))}
@@ -31,7 +31,7 @@ export const Navbar = () => {
 
       <ul>
         {navIcons.map((icon) => (
-          <ALink>
+          <ALink key={icon}>
             <i className={icon}></i>
           </ALink>
         ))}

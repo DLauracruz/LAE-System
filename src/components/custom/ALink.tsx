@@ -8,7 +8,7 @@ interface IProps {
 export const ALink = ({ children, selected }: IProps) => {
   return (
     <li className={`${selected && "navbar__selected"}`}>
-      <a>{children}</a>
+      <a href="">{children}</a>
     </li>
   );
 };
